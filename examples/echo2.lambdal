@@ -1,0 +1,2 @@
+loop = \s.(eq s "") (\_.false) (\_.(("println", (plus s s)), main));
+main = \x.(("readLine", false), loop);
