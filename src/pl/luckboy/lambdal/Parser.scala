@@ -10,7 +10,7 @@ object Parser extends StandardTokenParsers
 {
   import Language._
   
-  lexical.delimiters ++= List("=", ";", "(", ")", "\\", ",")
+  lexical.delimiters ++= List("=", ";", "(", ")", "\\", ".", ",")
   lexical.reserved ++= List("true", "false")
   
   case class Def(ident: String, expr: Expr)

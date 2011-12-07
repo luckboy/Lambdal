@@ -19,7 +19,7 @@ object Language
   
   case class BoolVal(b: Boolean) extends Value with Expr
   {
-    override def apply(arg: Value) = BuiltinFun { case arg2 => if(b) arg else arg2 }
+    override def apply(arg: Value) = BuiltinFun { case arg2 => if(b) arg(BoolVal(true)) else arg2(BoolVal(false)) }
     
     override def toString = b.toString
   }

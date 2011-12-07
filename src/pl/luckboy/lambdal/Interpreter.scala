@@ -10,9 +10,7 @@ import scala.util.control.Exception._
 object Interpreter 
 {  
   import Language._
-  import Parser.Def
-  
-  private case object RecExpr extends Expr
+  import Parser.Def  
   
   private case class Fun(lambda: Lambda, env: Map[String, Expr]) extends Value
   {
@@ -35,29 +33,31 @@ object Interpreter
       case IntVal(i)           => IntVal(i)
       case StringVal(s)        => StringVal(s)
       case PairVal(a, b)       => PairVal(a, b)
+      case BuiltinFun(f)       => BuiltinFun(f)
       case lambda@Lambda(_, _) => Fun(lambda, env)
-      case Var(id)             => eval(env.get(id).getOrElse(false))(env + (id -> RecExpr))
+      case Var(id)             => eval(env.get(id).getOrElse(false))(env)
       case App(f, a)           => eval(f)(env)(eval(a)(env))
       case PairExpr(a, b)      => PairVal(eval(a)(env), eval(b)(env))
-      case RecExpr             => throw new Exception("recursive call variable")
     }
   
   def interp(defs: List[Def])(in: BufferedReader, out: PrintStream) = {
     val env = makeEnv(defs)
     def mainLoop(f: Value, x: Value): Unit = {
       f(x) match {
-        case PairVal(StringVal(cmd), g) =>
+        case PairVal(PairVal(StringVal(cmd), arg), g) =>
           val y = cmd match {
             case "read"     =>
               val c = in.read
               if(c != -1) StringVal(c.toChar.toString) else  BoolVal(false)
+            case "readInt" =>
+              catching(classOf[EOFException], classOf[NumberFormatException]).opt(IntVal(in.readLine.toInt)).getOrElse(BoolVal(false))
             case "readLine" =>
               catching(classOf[EOFException]).opt(StringVal(in.readLine)).getOrElse(BoolVal(false))
             case "print"    =>
-              out.print(x)
+              out.print(arg)
               BoolVal(true)
             case "println"  =>
-              out.println(x)
+              out.println(arg)
               BoolVal(true)
             case _          =>
               BoolVal(false)

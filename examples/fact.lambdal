@@ -1,0 +1,2 @@
+fact = \n.(eq n 0) (\_.1) (\_.mul n (fact (sub n 1)));
+main = \x.(("readInt", false), (\y.(("println", fact y), (\z.false))));

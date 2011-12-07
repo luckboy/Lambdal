@@ -10,16 +10,17 @@
 /home/luck/develop/prj/scala/lang/Lambdal/src/pl/luckboy/lambdal/Parser.scala -> /home/luck/develop/prj/scala/lang/Lambdal/src/pl/luckboy/lambdal/Language.scala
 /home/luck/develop/prj/scala/lang/Lambdal/src/pl/luckboy/lambdal/Language.scala -> /home/luck/develop/prj/scala/lang/Lambdal/src/pl/luckboy/lambdal/Language.scala
 -------
-/home/luck/develop/prj/scala/lang/Lambdal/src/pl/luckboy/lambdal/Interpreter.scala -> /home/luck/develop/prj/scala/lang/Lambdal/bin/pl/luckboy/lambdal/Interpreter$$anonfun$3.class
+/home/luck/develop/prj/scala/lang/Lambdal/src/pl/luckboy/lambdal/Interpreter.scala -> /home/luck/develop/prj/scala/lang/Lambdal/bin/pl/luckboy/lambdal/Interpreter$$anonfun$eval$1.class
 /home/luck/develop/prj/scala/lang/Lambdal/src/pl/luckboy/lambdal/Interpreter.scala -> /home/luck/develop/prj/scala/lang/Lambdal/bin/pl/luckboy/lambdal/Interpreter$$anonfun$2.class
 /home/luck/develop/prj/scala/lang/Lambdal/src/pl/luckboy/lambdal/Interpreter.scala -> /home/luck/develop/prj/scala/lang/Lambdal/bin/pl/luckboy/lambdal/Interpreter$Fun$.class
-/home/luck/develop/prj/scala/lang/Lambdal/src/pl/luckboy/lambdal/Interpreter.scala -> /home/luck/develop/prj/scala/lang/Lambdal/bin/pl/luckboy/lambdal/Interpreter$RecExpr$.class
+/home/luck/develop/prj/scala/lang/Lambdal/src/pl/luckboy/lambdal/Interpreter.scala -> /home/luck/develop/prj/scala/lang/Lambdal/bin/pl/luckboy/lambdal/Interpreter$$anonfun$4.class
 /home/luck/develop/prj/scala/lang/Lambdal/src/pl/luckboy/lambdal/Interpreter.scala -> /home/luck/develop/prj/scala/lang/Lambdal/bin/pl/luckboy/lambdal/Interpreter$$anonfun$makeEnv$1.class
 /home/luck/develop/prj/scala/lang/Lambdal/src/pl/luckboy/lambdal/Interpreter.scala -> /home/luck/develop/prj/scala/lang/Lambdal/bin/pl/luckboy/lambdal/Interpreter.class
 /home/luck/develop/prj/scala/lang/Lambdal/src/pl/luckboy/lambdal/Interpreter.scala -> /home/luck/develop/prj/scala/lang/Lambdal/bin/pl/luckboy/lambdal/Interpreter$Fun.class
+/home/luck/develop/prj/scala/lang/Lambdal/src/pl/luckboy/lambdal/Interpreter.scala -> /home/luck/develop/prj/scala/lang/Lambdal/bin/pl/luckboy/lambdal/Interpreter$$anonfun$5.class
 /home/luck/develop/prj/scala/lang/Lambdal/src/pl/luckboy/lambdal/Interpreter.scala -> /home/luck/develop/prj/scala/lang/Lambdal/bin/pl/luckboy/lambdal/Interpreter$$anonfun$1.class
+/home/luck/develop/prj/scala/lang/Lambdal/src/pl/luckboy/lambdal/Interpreter.scala -> /home/luck/develop/prj/scala/lang/Lambdal/bin/pl/luckboy/lambdal/Interpreter$$anonfun$3.class
 /home/luck/develop/prj/scala/lang/Lambdal/src/pl/luckboy/lambdal/Interpreter.scala -> /home/luck/develop/prj/scala/lang/Lambdal/bin/pl/luckboy/lambdal/Interpreter$.class
-/home/luck/develop/prj/scala/lang/Lambdal/src/pl/luckboy/lambdal/Interpreter.scala -> /home/luck/develop/prj/scala/lang/Lambdal/bin/pl/luckboy/lambdal/Interpreter$$anonfun$eval$1.class
 /home/luck/develop/prj/scala/lang/Lambdal/src/pl/luckboy/lambdal/Main.scala -> /home/luck/develop/prj/scala/lang/Lambdal/bin/pl/luckboy/lambdal/Main$$anonfun$1$$anonfun$apply$2.class
 /home/luck/develop/prj/scala/lang/Lambdal/src/pl/luckboy/lambdal/Main.scala -> /home/luck/develop/prj/scala/lang/Lambdal/bin/pl/luckboy/lambdal/Main$$anonfun$1.class
 /home/luck/develop/prj/scala/lang/Lambdal/src/pl/luckboy/lambdal/Main.scala -> /home/luck/develop/prj/scala/lang/Lambdal/bin/pl/luckboy/lambdal/Main$.class
